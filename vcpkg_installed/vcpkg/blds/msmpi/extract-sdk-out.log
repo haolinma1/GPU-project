@@ -1,0 +1,2 @@
+
+D:\Seneca\GPU\work\Final_Data_Analysis_Stock\vcpkg_installed\vcpkg\blds\msmpi>msiexec /a "C:\Users\10123\AppData\Local\vcpkg\downloads\msmpisdk-10.1.12498-b0087dfd.msi" /qn /log "D:\Seneca\GPU\work\Final_Data_Analysis_Stock\vcpkg_installed\vcpkg\blds\msmpi\msiexec-x64-windows.log" TARGETDIR="D:\Seneca\GPU\work\Final_Data_Analysis_Stock\vcpkg_installed\vcpkg\blds\msmpi\src\msmpi-10.1.12498\sdk" 

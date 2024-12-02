@@ -1,0 +1,690 @@
+Makefile:636: update target 'all-recursive' due to: target is .PHONY
+fail=; \
+if (target_option=k; case ${target_option-} in ?) ;; *) echo "am__make_running_with_option: internal error: invalid" "target option '${target_option-}' specified" >&2; exit 1;; esac; has_opt=no; sane_makeflags=$MAKEFLAGS; if { if test -z '0'; then false; elif test -n 'x86_64-pc-msys'; then true; elif test -n '4.4.1' && test -n '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg'; then true; else false; fi; }; then sane_makeflags=$MFLAGS; else case $MAKEFLAGS in *\\[\ \	]*) bs=\\; sane_makeflags=`printf '%s\n' "$MAKEFLAGS" | sed "s/$bs$bs[$bs $bs	]*//g"`;; esac; fi; skip_next=no; strip_trailopt () { flg=`printf '%s\n' "$flg" | sed "s/$1.*$//"`; }; for flg in $sane_makeflags; do test $skip_next = yes && { skip_next=no; continue; }; case $flg in *=*|--*) continue;; -*I) strip_trailopt 'I'; skip_next=yes;; -*I?*) strip_trailopt 'I';; -*O) strip_trailopt 'O'; skip_next=yes;; -*O?*) strip_trailopt 'O';; -*l) strip_trailopt 'l'; skip_next=yes;; -*l?*) strip_trailopt 'l';; -[dEDm]) skip_next=yes;; -[JT]) skip_next=yes;; esac; case $flg in *$target_option*) has_opt=yes; break;; esac; done; test $has_opt = yes); then \
+  failcom='fail=yes'; \
+else \
+  failcom='exit 1'; \
+fi; \
+dot_seen=no; \
+target=`echo all-recursive | sed s/-recursive//`; \
+case "all-recursive" in \
+  distclean-* | maintainer-clean-*) list='include hwloc utils tests contrib/systemd contrib/completion contrib/misc contrib/hwloc-ps.www doc contrib/windows' ;; \
+  *) list='include hwloc utils tests contrib/systemd contrib/completion contrib/misc contrib/hwloc-ps.www doc' ;; \
+esac; \
+for subdir in $list; do \
+  echo "Making $target in $subdir"; \
+  if test "$subdir" = "."; then \
+    dot_seen=yes; \
+    local_target="$target-am"; \
+  else \
+    local_target="$target"; \
+  fi; \
+  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && /usr/bin/make  $local_target) \
+  || eval $failcom; \
+done; \
+if test "$dot_seen" = "no"; then \
+  /usr/bin/make  "$target-am" || exit 1; \
+fi; test -z "$fail"
+Making all in include
+make[1]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include'
+Making all in hwloc
+make[1]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc'
+Makefile:997: update target 'topology.lo' due to: target does not exist
+source='.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology.c' object='topology.lo' libtool=yes \
+DEPDIR=.deps depmode=msvc7 /bin/sh .././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+/bin/sh ../libtool  --tag=CC   --mode=compile compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\"" -DRUNSTATEDIR="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\"" -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o topology.lo .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology.c
+Makefile:997: update target 'traversal.lo' due to: target does not exist
+source='.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/traversal.c' object='traversal.lo' libtool=yes \
+DEPDIR=.deps depmode=msvc7 /bin/sh .././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+/bin/sh ../libtool  --tag=CC   --mode=compile compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\"" -DRUNSTATEDIR="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\"" -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o traversal.lo .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/traversal.c
+Makefile:997: update target 'distances.lo' due to: target does not exist
+source='.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/distances.c' object='distances.lo' libtool=yes \
+DEPDIR=.deps depmode=msvc7 /bin/sh .././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+/bin/sh ../libtool  --tag=CC   --mode=compile compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\"" -DRUNSTATEDIR="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\"" -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o distances.lo .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/distances.c
+Makefile:997: update target 'memattrs.lo' due to: target does not exist
+source='.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/memattrs.c' object='memattrs.lo' libtool=yes \
+DEPDIR=.deps depmode=msvc7 /bin/sh .././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+/bin/sh ../libtool  --tag=CC   --mode=compile compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\"" -DRUNSTATEDIR="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\"" -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o memattrs.lo .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/memattrs.c
+Makefile:997: update target 'cpukinds.lo' due to: target does not exist
+source='.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/cpukinds.c' object='cpukinds.lo' libtool=yes \
+DEPDIR=.deps depmode=msvc7 /bin/sh .././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+/bin/sh ../libtool  --tag=CC   --mode=compile compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\"" -DRUNSTATEDIR="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\"" -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o cpukinds.lo .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/cpukinds.c
+Makefile:997: update target 'components.lo' due to: target does not exist
+source='.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/components.c' object='components.lo' libtool=yes \
+DEPDIR=.deps depmode=msvc7 /bin/sh .././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+/bin/sh ../libtool  --tag=CC   --mode=compile compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\"" -DRUNSTATEDIR="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\"" -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o components.lo .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/components.c
+Makefile:997: update target 'bind.lo' due to: target does not exist
+source='.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/bind.c' object='bind.lo' libtool=yes \
+DEPDIR=.deps depmode=msvc7 /bin/sh .././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+/bin/sh ../libtool  --tag=CC   --mode=compile compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\"" -DRUNSTATEDIR="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\"" -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o bind.lo .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/bind.c
+Makefile:997: update target 'bitmap.lo' due to: target does not exist
+source='.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/bitmap.c' object='bitmap.lo' libtool=yes \
+DEPDIR=.deps depmode=msvc7 /bin/sh .././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+/bin/sh ../libtool  --tag=CC   --mode=compile compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\"" -DRUNSTATEDIR="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\"" -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o bitmap.lo .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/bitmap.c
+Makefile:997: update target 'pci-common.lo' due to: target does not exist
+source='.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/pci-common.c' object='pci-common.lo' libtool=yes \
+DEPDIR=.deps depmode=msvc7 /bin/sh .././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+/bin/sh ../libtool  --tag=CC   --mode=compile compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\"" -DRUNSTATEDIR="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\"" -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o pci-common.lo .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/pci-common.c
+Makefile:997: update target 'diff.lo' due to: target does not exist
+source='.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/diff.c' object='diff.lo' libtool=yes \
+DEPDIR=.deps depmode=msvc7 /bin/sh .././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+/bin/sh ../libtool  --tag=CC   --mode=compile compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\"" -DRUNSTATEDIR="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\"" -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o diff.lo .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/diff.c
+Makefile:997: update target 'shmem.lo' due to: target does not exist
+source='.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/shmem.c' object='shmem.lo' libtool=yes \
+DEPDIR=.deps depmode=msvc7 /bin/sh .././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+/bin/sh ../libtool  --tag=CC   --mode=compile compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\"" -DRUNSTATEDIR="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\"" -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o shmem.lo .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/shmem.c
+Makefile:997: update target 'misc.lo' due to: target does not exist
+source='.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/misc.c' object='misc.lo' libtool=yes \
+DEPDIR=.deps depmode=msvc7 /bin/sh .././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+/bin/sh ../libtool  --tag=CC   --mode=compile compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\"" -DRUNSTATEDIR="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\"" -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o misc.lo .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/misc.c
+Makefile:997: update target 'base64.lo' due to: target does not exist
+source='.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/base64.c' object='base64.lo' libtool=yes \
+DEPDIR=.deps depmode=msvc7 /bin/sh .././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+/bin/sh ../libtool  --tag=CC   --mode=compile compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\"" -DRUNSTATEDIR="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\"" -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o base64.lo .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/base64.c
+Makefile:997: update target 'topology-noos.lo' due to: target does not exist
+source='.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-noos.c' object='topology-noos.lo' libtool=yes \
+DEPDIR=.deps depmode=msvc7 /bin/sh .././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+/bin/sh ../libtool  --tag=CC   --mode=compile compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\"" -DRUNSTATEDIR="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\"" -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o topology-noos.lo .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-noos.c
+Makefile:997: update target 'topology-synthetic.lo' due to: target does not exist
+source='.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-synthetic.c' object='topology-synthetic.lo' libtool=yes \
+DEPDIR=.deps depmode=msvc7 /bin/sh .././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+/bin/sh ../libtool  --tag=CC   --mode=compile compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\"" -DRUNSTATEDIR="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\"" -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o topology-synthetic.lo .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-synthetic.c
+Makefile:997: update target 'topology-xml.lo' due to: target does not exist
+source='.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-xml.c' object='topology-xml.lo' libtool=yes \
+DEPDIR=.deps depmode=msvc7 /bin/sh .././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+/bin/sh ../libtool  --tag=CC   --mode=compile compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\"" -DRUNSTATEDIR="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\"" -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o topology-xml.lo .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-xml.c
+Makefile:997: update target 'topology-xml-nolibxml.lo' due to: target does not exist
+source='.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-xml-nolibxml.c' object='topology-xml-nolibxml.lo' libtool=yes \
+DEPDIR=.deps depmode=msvc7 /bin/sh .././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+/bin/sh ../libtool  --tag=CC   --mode=compile compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\"" -DRUNSTATEDIR="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\"" -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o topology-xml-nolibxml.lo .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-xml-nolibxml.c
+Makefile:997: update target 'topology-windows.lo' due to: target does not exist
+source='.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-windows.c' object='topology-windows.lo' libtool=yes \
+DEPDIR=.deps depmode=msvc7 /bin/sh .././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+/bin/sh ../libtool  --tag=CC   --mode=compile compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\"" -DRUNSTATEDIR="\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\"" -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o topology-windows.lo .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-windows.c
+libtool: compile:  compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\" -DRUNSTATEDIR=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\" -DWIN32 -D_WINDOWS -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -D_DEBUG -c -showIncludes .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology.c  -DDLL_EXPORT -DPIC -o .libs/topology.obj
+topology.c
+libtool: compile:  compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\" -DRUNSTATEDIR=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\" -DWIN32 -D_WINDOWS -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -D_DEBUG -c -showIncludes .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/distances.c  -DDLL_EXPORT -DPIC -o .libs/distances.obj
+distances.c
+libtool: compile:  compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\" -DRUNSTATEDIR=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\" -DWIN32 -D_WINDOWS -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -D_DEBUG -c -showIncludes .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/traversal.c  -DDLL_EXPORT -DPIC -o .libs/traversal.obj
+traversal.c
+libtool: compile:  compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\" -DRUNSTATEDIR=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\" -DWIN32 -D_WINDOWS -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -D_DEBUG -c -showIncludes .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/memattrs.c  -DDLL_EXPORT -DPIC -o .libs/memattrs.obj
+memattrs.c
+libtool: compile:  compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\" -DRUNSTATEDIR=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\" -DWIN32 -D_WINDOWS -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -D_DEBUG -c -showIncludes .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/cpukinds.c  -DDLL_EXPORT -DPIC -o .libs/cpukinds.obj
+cpukinds.c
+libtool: compile:  compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\" -DRUNSTATEDIR=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\" -DWIN32 -D_WINDOWS -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -D_DEBUG -c -showIncludes .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/components.c  -DDLL_EXPORT -DPIC -o .libs/components.obj
+components.c
+libtool: compile:  compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\" -DRUNSTATEDIR=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\" -DWIN32 -D_WINDOWS -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -D_DEBUG -c -showIncludes .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/diff.c  -DDLL_EXPORT -DPIC -o .libs/diff.obj
+diff.c
+libtool: compile:  compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\" -DRUNSTATEDIR=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\" -DWIN32 -D_WINDOWS -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -D_DEBUG -c -showIncludes .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/shmem.c  -DDLL_EXPORT -DPIC -o .libs/shmem.obj
+shmem.c
+libtool: compile:  compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\" -DRUNSTATEDIR=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\" -DWIN32 -D_WINDOWS -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -D_DEBUG -c -showIncludes .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/misc.c  -DDLL_EXPORT -DPIC -o .libs/misc.obj
+misc.c
+libtool: compile:  compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\" -DRUNSTATEDIR=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\" -DWIN32 -D_WINDOWS -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -D_DEBUG -c -showIncludes .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/bind.c  -DDLL_EXPORT -DPIC -o .libs/bind.obj
+bind.c
+libtool: compile:  compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\" -DRUNSTATEDIR=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\" -DWIN32 -D_WINDOWS -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -D_DEBUG -c -showIncludes .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/pci-common.c  -DDLL_EXPORT -DPIC -o .libs/pci-common.obj
+pci-common.c
+libtool: compile:  compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\" -DRUNSTATEDIR=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\" -DWIN32 -D_WINDOWS -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -D_DEBUG -c -showIncludes .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/bitmap.c  -DDLL_EXPORT -DPIC -o .libs/bitmap.obj
+bitmap.c
+libtool: compile:  compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\" -DRUNSTATEDIR=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\" -DWIN32 -D_WINDOWS -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -D_DEBUG -c -showIncludes .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-noos.c  -DDLL_EXPORT -DPIC -o .libs/topology-noos.obj
+topology-noos.c
+libtool: compile:  compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\" -DRUNSTATEDIR=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\" -DWIN32 -D_WINDOWS -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -D_DEBUG -c -showIncludes .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/base64.c  -DDLL_EXPORT -DPIC -o .libs/base64.obj
+base64.c
+libtool: compile:  compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\" -DRUNSTATEDIR=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\" -DWIN32 -D_WINDOWS -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -D_DEBUG -c -showIncludes .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-synthetic.c  -DDLL_EXPORT -DPIC -o .libs/topology-synthetic.obj
+topology-synthetic.c
+libtool: compile:  compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\" -DRUNSTATEDIR=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\" -DWIN32 -D_WINDOWS -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -D_DEBUG -c -showIncludes .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-xml-nolibxml.c  -DDLL_EXPORT -DPIC -o .libs/topology-xml-nolibxml.obj
+topology-xml-nolibxml.c
+libtool: compile:  compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\" -DRUNSTATEDIR=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\" -DWIN32 -D_WINDOWS -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -D_DEBUG -c -showIncludes .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-xml.c  -DDLL_EXPORT -DPIC -o .libs/topology-xml.obj
+topology-xml.c
+libtool: compile:  compile cl.exe -DHAVE_CONFIG_H -I. -I.././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc -I../include/private/autogen -I../include/hwloc/autogen -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean/include -DHWLOC_INSIDE_LIBHWLOC -DHWLOC_PLUGINS_PATH=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib/hwloc\" -DRUNSTATEDIR=\"/D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/var/run\" -DWIN32 -D_WINDOWS -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -D_DEBUG -c -showIncludes .././../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-windows.c  -DDLL_EXPORT -DPIC -o .libs/topology-windows.obj
+topology-windows.c
+Makefile:913: update target 'libhwloc.la' due to: target does not exist
+/bin/sh ../libtool  --tag=CC   --mode=link compile cl.exe  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -no-undefined     -version-info 23:1:8 -lgdi32    -no-undefined  -Xlinker -Xlinker -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -Xlinker -Xlinker -machine:x64 -Xlinker -Xlinker -Xlinker -nologo -Xlinker -Xlinker -Xlinker -debug -Xlinker -Xlinker -Xlinker -INCREMENTAL -o libhwloc.la -rpath /D/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib topology.lo traversal.lo distances.lo memattrs.lo cpukinds.lo components.lo bind.lo bitmap.lo pci-common.lo diff.lo shmem.lo misc.lo base64.lo topology-noos.lo topology-synthetic.lo topology-xml.lo topology-xml-nolibxml.lo              topology-windows.lo      -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32
+libtool: link: dumpbin.exe -symbols -headers  .libs/topology.obj .libs/traversal.obj .libs/distances.obj .libs/memattrs.obj .libs/cpukinds.obj .libs/components.obj .libs/bind.obj .libs/bitmap.obj .libs/pci-common.obj .libs/diff.obj .libs/shmem.obj .libs/misc.obj .libs/base64.obj .libs/topology-noos.obj .libs/topology-synthetic.obj .libs/topology-xml.obj .libs/topology-xml-nolibxml.obj .libs/topology-windows.obj   | gawk '     {last_section=section; section=$ 3};     /^COFF SYMBOL TABLE/{for(i in hide) delete hide[i]};     /Section length .*#relocs.*(pick any)/{hide[last_section]=1};     /^ *Symbol name *: /{split($ 0,sn,":"); si=substr(sn[2],2)};     /^ *Type *: code/{print "T",si,substr(si,length(prfx))};     /^ *Type *: data/{print "I",si,substr(si,length(prfx))};     $ 0!~/External *\|/{next};     / 0+ UNDEF /{next}; / UNDEF \([^|]\)*()/{next};     {if(hide[section]) next};     {f="D"}; $ 0~/\(\).*\|/{f="T"};     {split($ 0,a,/\||\r/); split(a[2],s)};     s[1]~/^[@?]/{print f,s[1],s[1]; next};     s[1]~prfx {split(s[1],t,"@"); print f,t[1],substr(t[1],length(prfx))}     ' prfx=^ | /usr/bin/sed '/ __gnu_lto/d' | /usr/bin/sed -e '/^[BCDGRS][ ]/s/.*[ ]\([^ ]*\)/\1,DATA/' | /usr/bin/sed -e '/^[AITW][ ]/s/.*[ ]//' | sort | uniq > .libs/hwloc.exp
+libtool: link: if test DEF = "`/usr/bin/sed -n -e 's/^[	 ]*//' -e '/^\(;.*\)*$/d' -e 's/^\(EXPORTS\|LIBRARY\)\([	 ].*\)*$/DEF/p' -e q .libs/hwloc.exp`" ; then cp ".libs/hwloc.exp" ".libs/hwloc-15.dll.def"; echo ".libs\\hwloc-15.dll.def" > ".libs/hwloc-15.dll.exp"; else /usr/bin/sed -e 's/^/-link -EXPORT:/' < .libs/hwloc.exp > .libs/hwloc-15.dll.exp; fi
+libtool: link:  compile cl.exe -o .libs\\hwloc-15.dll  .libs/topology.obj .libs/traversal.obj .libs/distances.obj .libs/memattrs.obj .libs/cpukinds.obj .libs/components.obj .libs/bind.obj .libs/bitmap.obj .libs/pci-common.obj .libs/diff.obj .libs/shmem.obj .libs/misc.obj .libs/base64.obj .libs/topology-noos.obj .libs/topology-synthetic.obj .libs/topology-xml.obj .libs/topology-xml-nolibxml.obj .libs/topology-windows.obj   -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -machine:x64 -Xlinker -nologo -Xlinker -debug -Xlinker -INCREMENTAL    -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32 "@.libs\\hwloc-15.dll.exp" -Wl,-DLL,-IMPLIB:".libs\\hwloc.lib"
+   Creating library .libs\hwloc.lib and object .libs\hwloc.exp
+libtool: link:  linknames=
+libtool: link: ( cd ".libs" && rm -f "libhwloc.la" && cp -pR "../libhwloc.la" "libhwloc.la" )
+make[1]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc'
+Making all in utils
+make[1]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/utils'
+Makefile:466: update target 'all-recursive' due to: target is .PHONY
+fail=; \
+if (target_option=k; case ${target_option-} in ?) ;; *) echo "am__make_running_with_option: internal error: invalid" "target option '${target_option-}' specified" >&2; exit 1;; esac; has_opt=no; sane_makeflags=$MAKEFLAGS; if { if test -z '1'; then false; elif test -n 'x86_64-pc-msys'; then true; elif test -n '4.4.1' && test -n '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/utils'; then true; else false; fi; }; then sane_makeflags=$MFLAGS; else case $MAKEFLAGS in *\\[\ \	]*) bs=\\; sane_makeflags=`printf '%s\n' "$MAKEFLAGS" | sed "s/$bs$bs[$bs $bs	]*//g"`;; esac; fi; skip_next=no; strip_trailopt () { flg=`printf '%s\n' "$flg" | sed "s/$1.*$//"`; }; for flg in $sane_makeflags; do test $skip_next = yes && { skip_next=no; continue; }; case $flg in *=*|--*) continue;; -*I) strip_trailopt 'I'; skip_next=yes;; -*I?*) strip_trailopt 'I';; -*O) strip_trailopt 'O'; skip_next=yes;; -*O?*) strip_trailopt 'O';; -*l) strip_trailopt 'l'; skip_next=yes;; -*l?*) strip_trailopt 'l';; -[dEDm]) skip_next=yes;; -[JT]) skip_next=yes;; esac; case $flg in *$target_option*) has_opt=yes; break;; esac; done; test $has_opt = yes); then \
+  failcom='fail=yes'; \
+else \
+  failcom='exit 1'; \
+fi; \
+dot_seen=no; \
+target=`echo all-recursive | sed s/-recursive//`; \
+case "all-recursive" in \
+  distclean-* | maintainer-clean-*) list='hwloc lstopo' ;; \
+  *) list='hwloc lstopo' ;; \
+esac; \
+for subdir in $list; do \
+  echo "Making $target in $subdir"; \
+  if test "$subdir" = "."; then \
+    dot_seen=yes; \
+    local_target="$target-am"; \
+  else \
+    local_target="$target"; \
+  fi; \
+  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && /usr/bin/make  $local_target) \
+  || eval $failcom; \
+done; \
+if test "$dot_seen" = "no"; then \
+  /usr/bin/make  "$target-am" || exit 1; \
+fi; test -z "$fail"
+Making all in hwloc
+make[2]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/utils/hwloc'
+Makefile:1262: update target 'all-recursive' due to: target is .PHONY
+fail=; \
+if (target_option=k; case ${target_option-} in ?) ;; *) echo "am__make_running_with_option: internal error: invalid" "target option '${target_option-}' specified" >&2; exit 1;; esac; has_opt=no; sane_makeflags=$MAKEFLAGS; if { if test -z '2'; then false; elif test -n 'x86_64-pc-msys'; then true; elif test -n '4.4.1' && test -n '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/utils/hwloc'; then true; else false; fi; }; then sane_makeflags=$MFLAGS; else case $MAKEFLAGS in *\\[\ \	]*) bs=\\; sane_makeflags=`printf '%s\n' "$MAKEFLAGS" | sed "s/$bs$bs[$bs $bs	]*//g"`;; esac; fi; skip_next=no; strip_trailopt () { flg=`printf '%s\n' "$flg" | sed "s/$1.*$//"`; }; for flg in $sane_makeflags; do test $skip_next = yes && { skip_next=no; continue; }; case $flg in *=*|--*) continue;; -*I) strip_trailopt 'I'; skip_next=yes;; -*I?*) strip_trailopt 'I';; -*O) strip_trailopt 'O'; skip_next=yes;; -*O?*) strip_trailopt 'O';; -*l) strip_trailopt 'l'; skip_next=yes;; -*l?*) strip_trailopt 'l';; -[dEDm]) skip_next=yes;; -[JT]) skip_next=yes;; esac; case $flg in *$target_option*) has_opt=yes; break;; esac; done; test $has_opt = yes); then \
+  failcom='fail=yes'; \
+else \
+  failcom='exit 1'; \
+fi; \
+dot_seen=no; \
+target=`echo all-recursive | sed s/-recursive//`; \
+case "all-recursive" in \
+  distclean-* | maintainer-clean-*) list='. test-hwloc-dump-hwdata' ;; \
+  *) list='. ' ;; \
+esac; \
+for subdir in $list; do \
+  echo "Making $target in $subdir"; \
+  if test "$subdir" = "."; then \
+    dot_seen=yes; \
+    local_target="$target-am"; \
+  else \
+    local_target="$target"; \
+  fi; \
+  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && /usr/bin/make  $local_target) \
+  || eval $failcom; \
+done; \
+if test "$dot_seen" = "no"; then \
+  /usr/bin/make  "$target-am" || exit 1; \
+fi; test -z "$fail"
+Making all in .
+make[3]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/utils/hwloc'
+Makefile:1123: update target 'hwloc-annotate.obj' due to: target does not exist
+source='../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-annotate.c' object='hwloc-annotate.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o hwloc-annotate.obj `cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-annotate.c'`
+Makefile:1123: update target 'hwloc-bind.obj' due to: target does not exist
+source='../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-bind.c' object='hwloc-bind.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o hwloc-bind.obj `cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-bind.c'`
+Makefile:1123: update target 'hwloc-calc.obj' due to: target does not exist
+source='../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-calc.c' object='hwloc-calc.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o hwloc-calc.obj `cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-calc.c'`
+Makefile:1123: update target 'hwloc-diff.obj' due to: target does not exist
+source='../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-diff.c' object='hwloc-diff.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o hwloc-diff.obj `cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-diff.c'`
+Makefile:1123: update target 'hwloc-distrib.obj' due to: target does not exist
+source='../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-distrib.c' object='hwloc-distrib.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o hwloc-distrib.obj `cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-distrib.c'`
+Makefile:1123: update target 'hwloc-info.obj' due to: target does not exist
+source='../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-info.c' object='hwloc-info.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o hwloc-info.obj `cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-info.c'`
+Makefile:1123: update target 'hwloc-patch.obj' due to: target does not exist
+source='../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-patch.c' object='hwloc-patch.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o hwloc-patch.obj `cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-patch.c'`
+Makefile:1131: update target 'common-ps.lo' due to: target does not exist
+source='../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/common-ps.c' object='common-ps.lo' libtool=yes \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+/bin/sh ../../libtool  --tag=CC   --mode=compile compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o common-ps.lo ../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/common-ps.c
+Makefile:1813: update target 'hwloc.7' due to: target does not exist
+echo Creating hwloc.7 man page...
+Makefile:1803: update target 'hwloc-annotate.1' due to: target does not exist
+echo Creating hwloc-annotate.1 man page...
+Makefile:1803: update target 'hwloc-bind.1' due to: target does not exist
+echo Creating hwloc-bind.1 man page...
+Makefile:1803: update target 'hwloc-calc.1' due to: target does not exist
+echo Creating hwloc-calc.1 man page...
+Makefile:1803: update target 'hwloc-compress-dir.1' due to: target does not exist
+echo Creating hwloc-compress-dir.1 man page...
+Makefile:1803: update target 'hwloc-diff.1' due to: target does not exist
+echo Creating hwloc-diff.1 man page...
+Makefile:1803: update target 'hwloc-distrib.1' due to: target does not exist
+echo Creating hwloc-distrib.1 man page...
+Makefile:1803: update target 'hwloc-info.1' due to: target does not exist
+echo Creating hwloc-info.1 man page...
+Makefile:1803: update target 'hwloc-patch.1' due to: target does not exist
+echo Creating hwloc-patch.1 man page...
+Creating hwloc-compress-dir.1 man page...
+/usr/bin/sed -e 's/%PACKAGE_NAME%/hwloc/g' -e 's/%PACKAGE_VERSION%/2.11.2rc2-git/g' -e 's/%HWLOC_DATE%/Unreleased developer copy/g' \
+  > hwloc-compress-dir.1 < ../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-compress-dir.1in
+Creating hwloc-patch.1 man page...
+/usr/bin/sed -e 's/%PACKAGE_NAME%/hwloc/g' -e 's/%PACKAGE_VERSION%/2.11.2rc2-git/g' -e 's/%HWLOC_DATE%/Unreleased developer copy/g' \
+  > hwloc-patch.1 < ../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-patch.1in
+Creating hwloc-bind.1 man page...
+Creating hwloc-annotate.1 man page...
+Creating hwloc-diff.1 man page...
+Creating hwloc-calc.1 man page...
+Creating hwloc-distrib.1 man page...
+/usr/bin/sed -e 's/%PACKAGE_NAME%/hwloc/g' -e 's/%PACKAGE_VERSION%/2.11.2rc2-git/g' -e 's/%HWLOC_DATE%/Unreleased developer copy/g' \
+  > hwloc-annotate.1 < ../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-annotate.1in
+Creating hwloc-info.1 man page...
+Creating hwloc.7 man page...
+/usr/bin/sed -e 's/%PACKAGE_NAME%/hwloc/g' -e 's/%PACKAGE_VERSION%/2.11.2rc2-git/g' -e 's/%HWLOC_DATE%/Unreleased developer copy/g' \
+  > hwloc.7 < ../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc.7in
+/usr/bin/sed -e 's/%PACKAGE_NAME%/hwloc/g' -e 's/%PACKAGE_VERSION%/2.11.2rc2-git/g' -e 's/%HWLOC_DATE%/Unreleased developer copy/g' \
+  > hwloc-info.1 < ../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-info.1in
+/usr/bin/sed -e 's/%PACKAGE_NAME%/hwloc/g' -e 's/%PACKAGE_VERSION%/2.11.2rc2-git/g' -e 's/%HWLOC_DATE%/Unreleased developer copy/g' \
+  > hwloc-bind.1 < ../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-bind.1in
+/usr/bin/sed -e 's/%PACKAGE_NAME%/hwloc/g' -e 's/%PACKAGE_VERSION%/2.11.2rc2-git/g' -e 's/%HWLOC_DATE%/Unreleased developer copy/g' \
+  > hwloc-calc.1 < ../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-calc.1in
+/usr/bin/sed -e 's/%PACKAGE_NAME%/hwloc/g' -e 's/%PACKAGE_VERSION%/2.11.2rc2-git/g' -e 's/%HWLOC_DATE%/Unreleased developer copy/g' \
+  > hwloc-diff.1 < ../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-diff.1in
+/usr/bin/sed -e 's/%PACKAGE_NAME%/hwloc/g' -e 's/%PACKAGE_VERSION%/2.11.2rc2-git/g' -e 's/%HWLOC_DATE%/Unreleased developer copy/g' \
+  > hwloc-distrib.1 < ../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/hwloc-distrib.1in
+hwloc-diff.c
+Makefile:1024: update target 'hwloc-diff.exe' due to: target does not exist
+rm -f hwloc-diff.exe
+/bin/sh ../../libtool  --tag=CC   --mode=link compile cl.exe  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -no-undefined -Xlinker -Xlinker -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -Xlinker -Xlinker -machine:x64 -Xlinker -Xlinker -Xlinker -nologo -Xlinker -Xlinker -Xlinker -debug -Xlinker -Xlinker -Xlinker -INCREMENTAL -o hwloc-diff.exe hwloc-diff.obj /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/libhwloc.la -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32
+hwloc-bind.c
+hwloc-annotate.c
+hwloc-distrib.c
+Makefile:1012: update target 'hwloc-annotate.exe' due to: target does not exist
+rm -f hwloc-annotate.exe
+/bin/sh ../../libtool  --tag=CC   --mode=link compile cl.exe  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -no-undefined -Xlinker -Xlinker -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -Xlinker -Xlinker -machine:x64 -Xlinker -Xlinker -Xlinker -nologo -Xlinker -Xlinker -Xlinker -debug -Xlinker -Xlinker -Xlinker -INCREMENTAL -o hwloc-annotate.exe hwloc-annotate.obj /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/libhwloc.la -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32
+Makefile:1016: update target 'hwloc-bind.exe' due to: target does not exist
+rm -f hwloc-bind.exe
+/bin/sh ../../libtool  --tag=CC   --mode=link compile cl.exe  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -no-undefined -Xlinker -Xlinker -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -Xlinker -Xlinker -machine:x64 -Xlinker -Xlinker -Xlinker -nologo -Xlinker -Xlinker -Xlinker -debug -Xlinker -Xlinker -Xlinker -INCREMENTAL -o hwloc-bind.exe hwloc-bind.obj /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/libhwloc.la -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32
+Makefile:1028: update target 'hwloc-distrib.exe' due to: target does not exist
+rm -f hwloc-distrib.exe
+/bin/sh ../../libtool  --tag=CC   --mode=link compile cl.exe  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -no-undefined -Xlinker -Xlinker -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -Xlinker -Xlinker -machine:x64 -Xlinker -Xlinker -Xlinker -nologo -Xlinker -Xlinker -Xlinker -debug -Xlinker -Xlinker -Xlinker -INCREMENTAL -o hwloc-distrib.exe hwloc-distrib.obj /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/libhwloc.la -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32
+hwloc-calc.c
+Makefile:1020: update target 'hwloc-calc.exe' due to: target does not exist
+rm -f hwloc-calc.exe
+/bin/sh ../../libtool  --tag=CC   --mode=link compile cl.exe  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -no-undefined -Xlinker -Xlinker -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -Xlinker -Xlinker -machine:x64 -Xlinker -Xlinker -Xlinker -nologo -Xlinker -Xlinker -Xlinker -debug -Xlinker -Xlinker -Xlinker -INCREMENTAL -o hwloc-calc.exe hwloc-calc.obj /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/libhwloc.la -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32
+hwloc-info.c
+Makefile:1040: update target 'hwloc-info.exe' due to: target does not exist
+rm -f hwloc-info.exe
+/bin/sh ../../libtool  --tag=CC   --mode=link compile cl.exe  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -no-undefined -Xlinker -Xlinker -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -Xlinker -Xlinker -machine:x64 -Xlinker -Xlinker -Xlinker -nologo -Xlinker -Xlinker -Xlinker -debug -Xlinker -Xlinker -Xlinker -INCREMENTAL -o hwloc-info.exe hwloc-info.obj /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/libhwloc.la -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32
+hwloc-patch.c
+Makefile:1044: update target 'hwloc-patch.exe' due to: target does not exist
+rm -f hwloc-patch.exe
+libtool: compile:  compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc -I../../include/private/autogen -I../../include/hwloc/autogen -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/include -I/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean/include -DWIN32 -D_WINDOWS -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -D_DEBUG -c -showIncludes ../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc/common-ps.c  -DDLL_EXPORT -DPIC -o .libs/common-ps.obj
+common-ps.c
+/bin/sh ../../libtool  --tag=CC   --mode=link compile cl.exe  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -no-undefined -Xlinker -Xlinker -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -Xlinker -Xlinker -machine:x64 -Xlinker -Xlinker -Xlinker -nologo -Xlinker -Xlinker -Xlinker -debug -Xlinker -Xlinker -Xlinker -INCREMENTAL -o hwloc-patch.exe hwloc-patch.obj /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/libhwloc.la -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32
+Makefile:1009: update target 'libutils_common.la' due to: target does not exist
+/bin/sh ../../libtool  --tag=CC   --mode=link compile cl.exe  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -no-undefined -Xlinker -Xlinker -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -Xlinker -Xlinker -machine:x64 -Xlinker -Xlinker -Xlinker -nologo -Xlinker -Xlinker -Xlinker -debug -Xlinker -Xlinker -Xlinker -INCREMENTAL -o libutils_common.la  common-ps.lo /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/libhwloc.la -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32
+libtool: link: compile cl.exe -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -machine:x64 -Xlinker -nologo -Xlinker -debug -Xlinker -INCREMENTAL -o .libs/hwloc-diff.exe hwloc-diff.obj  /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/.libs/hwloc.lib -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32  
+libtool: link: lt_outputfile=".libs/hwloc-diff.exe"
+libtool: link:  lt_tool_outputfile=".libs\hwloc-diff.exe"
+libtool: link:  case .libs/hwloc-diff.exe in *.exe|*.EXE) ;; *) lt_outputfile=.libs/hwloc-diff.exe.exe lt_tool_outputfile=.libs\hwloc-diff.exe.exe ;; esac
+libtool: link:  if test : != "mt" && test -f ".libs/hwloc-diff.exe.manifest"; then mt -manifest ".libs\hwloc-diff.exe.manifest" -outputresource:".libs\hwloc-diff.exe" || exit 1; rm -f ".libs/hwloc-diff.exe.manifest"; fi
+lt-hwloc-diff.c
+libtool: link: ar-lib lib.exe cr .libs/utils_common.lib .libs/common-ps.obj 
+libtool: link: : .libs/utils_common.lib
+libtool: link: ( cd ".libs" && rm -f "libutils_common.la" && cp -pR "../libutils_common.la" "libutils_common.la" )
+libtool: link: compile cl.exe -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -machine:x64 -Xlinker -nologo -Xlinker -debug -Xlinker -INCREMENTAL -o .libs/hwloc-distrib.exe hwloc-distrib.obj  /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/.libs/hwloc.lib -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32  
+libtool: link: compile cl.exe -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -machine:x64 -Xlinker -nologo -Xlinker -debug -Xlinker -INCREMENTAL -o .libs/hwloc-annotate.exe hwloc-annotate.obj  /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/.libs/hwloc.lib -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32  
+libtool: link: compile cl.exe -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -machine:x64 -Xlinker -nologo -Xlinker -debug -Xlinker -INCREMENTAL -o .libs/hwloc-bind.exe hwloc-bind.obj  /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/.libs/hwloc.lib -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32  
+libtool: link: compile cl.exe -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -machine:x64 -Xlinker -nologo -Xlinker -debug -Xlinker -INCREMENTAL -o .libs/hwloc-info.exe hwloc-info.obj  /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/.libs/hwloc.lib -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32  
+libtool: link: lt_outputfile=".libs/hwloc-distrib.exe"
+libtool: link: compile cl.exe -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -machine:x64 -Xlinker -nologo -Xlinker -debug -Xlinker -INCREMENTAL -o .libs/hwloc-calc.exe hwloc-calc.obj  /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/.libs/hwloc.lib -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32  
+libtool: link: compile cl.exe -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -machine:x64 -Xlinker -nologo -Xlinker -debug -Xlinker -INCREMENTAL -o .libs/hwloc-patch.exe hwloc-patch.obj  /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/.libs/hwloc.lib -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32  
+libtool: link:  lt_tool_outputfile=".libs\hwloc-distrib.exe"
+libtool: link:  case .libs/hwloc-distrib.exe in *.exe|*.EXE) ;; *) lt_outputfile=.libs/hwloc-distrib.exe.exe lt_tool_outputfile=.libs\hwloc-distrib.exe.exe ;; esac
+libtool: link:  if test : != "mt" && test -f ".libs/hwloc-distrib.exe.manifest"; then mt -manifest ".libs\hwloc-distrib.exe.manifest" -outputresource:".libs\hwloc-distrib.exe" || exit 1; rm -f ".libs/hwloc-distrib.exe.manifest"; fi
+libtool: link: lt_outputfile=".libs/hwloc-annotate.exe"
+libtool: link:  lt_tool_outputfile=".libs\hwloc-annotate.exe"
+libtool: link:  case .libs/hwloc-annotate.exe in *.exe|*.EXE) ;; *) lt_outputfile=.libs/hwloc-annotate.exe.exe lt_tool_outputfile=.libs\hwloc-annotate.exe.exe ;; esac
+libtool: link:  if test : != "mt" && test -f ".libs/hwloc-annotate.exe.manifest"; then mt -manifest ".libs\hwloc-annotate.exe.manifest" -outputresource:".libs\hwloc-annotate.exe" || exit 1; rm -f ".libs/hwloc-annotate.exe.manifest"; fi
+libtool: link: lt_outputfile=".libs/hwloc-patch.exe"
+libtool: link: lt_outputfile=".libs/hwloc-bind.exe"
+libtool: link: lt_outputfile=".libs/hwloc-info.exe"
+libtool: link: lt_outputfile=".libs/hwloc-calc.exe"
+libtool: link:  lt_tool_outputfile=".libs\hwloc-patch.exe"
+libtool: link:  lt_tool_outputfile=".libs\hwloc-bind.exe"
+libtool: link:  lt_tool_outputfile=".libs\hwloc-info.exe"
+libtool: link:  lt_tool_outputfile=".libs\hwloc-calc.exe"
+libtool: link:  case .libs/hwloc-bind.exe in *.exe|*.EXE) ;; *) lt_outputfile=.libs/hwloc-bind.exe.exe lt_tool_outputfile=.libs\hwloc-bind.exe.exe ;; esac
+libtool: link:  case .libs/hwloc-patch.exe in *.exe|*.EXE) ;; *) lt_outputfile=.libs/hwloc-patch.exe.exe lt_tool_outputfile=.libs\hwloc-patch.exe.exe ;; esac
+libtool: link:  case .libs/hwloc-info.exe in *.exe|*.EXE) ;; *) lt_outputfile=.libs/hwloc-info.exe.exe lt_tool_outputfile=.libs\hwloc-info.exe.exe ;; esac
+libtool: link:  case .libs/hwloc-calc.exe in *.exe|*.EXE) ;; *) lt_outputfile=.libs/hwloc-calc.exe.exe lt_tool_outputfile=.libs\hwloc-calc.exe.exe ;; esac
+libtool: link:  if test : != "mt" && test -f ".libs/hwloc-bind.exe.manifest"; then mt -manifest ".libs\hwloc-bind.exe.manifest" -outputresource:".libs\hwloc-bind.exe" || exit 1; rm -f ".libs/hwloc-bind.exe.manifest"; fi
+libtool: link:  if test : != "mt" && test -f ".libs/hwloc-patch.exe.manifest"; then mt -manifest ".libs\hwloc-patch.exe.manifest" -outputresource:".libs\hwloc-patch.exe" || exit 1; rm -f ".libs/hwloc-patch.exe.manifest"; fi
+libtool: link:  if test : != "mt" && test -f ".libs/hwloc-info.exe.manifest"; then mt -manifest ".libs\hwloc-info.exe.manifest" -outputresource:".libs\hwloc-info.exe" || exit 1; rm -f ".libs/hwloc-info.exe.manifest"; fi
+libtool: link:  if test : != "mt" && test -f ".libs/hwloc-calc.exe.manifest"; then mt -manifest ".libs\hwloc-calc.exe.manifest" -outputresource:".libs\hwloc-calc.exe" || exit 1; rm -f ".libs/hwloc-calc.exe.manifest"; fi
+lt-hwloc-distrib.c
+lt-hwloc-bind.c
+lt-hwloc-patch.c
+lt-hwloc-info.c
+lt-hwloc-annotate.c
+lt-hwloc-calc.c
+make[3]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/utils/hwloc'
+make[2]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/utils/hwloc'
+Making all in lstopo
+make[2]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/utils/lstopo'
+Makefile:1115: update target 'lstopo_no_graphics-lstopo.obj' due to: target does not exist
+source='lstopo.c' object='lstopo_no_graphics-lstopo.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo_no_graphics-lstopo.obj `if test -f 'lstopo.c'; then cygpath -w 'lstopo.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo.c'; fi`
+Makefile:1129: update target 'lstopo_no_graphics-lstopo-draw.obj' due to: target does not exist
+source='lstopo-draw.c' object='lstopo_no_graphics-lstopo-draw.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo_no_graphics-lstopo-draw.obj `if test -f 'lstopo-draw.c'; then cygpath -w 'lstopo-draw.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-draw.c'; fi`
+Makefile:1143: update target 'lstopo_no_graphics-lstopo-tikz.obj' due to: target does not exist
+source='lstopo-tikz.c' object='lstopo_no_graphics-lstopo-tikz.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo_no_graphics-lstopo-tikz.obj `if test -f 'lstopo-tikz.c'; then cygpath -w 'lstopo-tikz.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-tikz.c'; fi`
+Makefile:1157: update target 'lstopo_no_graphics-lstopo-fig.obj' due to: target does not exist
+source='lstopo-fig.c' object='lstopo_no_graphics-lstopo-fig.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo_no_graphics-lstopo-fig.obj `if test -f 'lstopo-fig.c'; then cygpath -w 'lstopo-fig.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-fig.c'; fi`
+Makefile:1171: update target 'lstopo_no_graphics-lstopo-svg.obj' due to: target does not exist
+source='lstopo-svg.c' object='lstopo_no_graphics-lstopo-svg.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo_no_graphics-lstopo-svg.obj `if test -f 'lstopo-svg.c'; then cygpath -w 'lstopo-svg.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-svg.c'; fi`
+Makefile:1185: update target 'lstopo_no_graphics-lstopo-ascii.obj' due to: target does not exist
+source='lstopo-ascii.c' object='lstopo_no_graphics-lstopo-ascii.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo_no_graphics-lstopo-ascii.obj `if test -f 'lstopo-ascii.c'; then cygpath -w 'lstopo-ascii.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-ascii.c'; fi`
+Makefile:1199: update target 'lstopo_no_graphics-lstopo-text.obj' due to: target does not exist
+source='lstopo-text.c' object='lstopo_no_graphics-lstopo-text.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo_no_graphics-lstopo-text.obj `if test -f 'lstopo-text.c'; then cygpath -w 'lstopo-text.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-text.c'; fi`
+Makefile:1213: update target 'lstopo_no_graphics-lstopo-xml.obj' due to: target does not exist
+source='lstopo-xml.c' object='lstopo_no_graphics-lstopo-xml.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo_no_graphics-lstopo-xml.obj `if test -f 'lstopo-xml.c'; then cygpath -w 'lstopo-xml.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-xml.c'; fi`
+Makefile:961: update target 'lstopo-lstopo.obj' due to: target does not exist
+source='lstopo.c' object='lstopo-lstopo.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc  -DLSTOPO_HAVE_GRAPHICS -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo-lstopo.obj `if test -f 'lstopo.c'; then cygpath -w 'lstopo.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo.c'; fi`
+Makefile:975: update target 'lstopo-lstopo-draw.obj' due to: target does not exist
+source='lstopo-draw.c' object='lstopo-lstopo-draw.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc  -DLSTOPO_HAVE_GRAPHICS -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo-lstopo-draw.obj `if test -f 'lstopo-draw.c'; then cygpath -w 'lstopo-draw.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-draw.c'; fi`
+Makefile:989: update target 'lstopo-lstopo-tikz.obj' due to: target does not exist
+source='lstopo-tikz.c' object='lstopo-lstopo-tikz.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc  -DLSTOPO_HAVE_GRAPHICS -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo-lstopo-tikz.obj `if test -f 'lstopo-tikz.c'; then cygpath -w 'lstopo-tikz.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-tikz.c'; fi`
+Makefile:1003: update target 'lstopo-lstopo-fig.obj' due to: target does not exist
+source='lstopo-fig.c' object='lstopo-lstopo-fig.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc  -DLSTOPO_HAVE_GRAPHICS -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo-lstopo-fig.obj `if test -f 'lstopo-fig.c'; then cygpath -w 'lstopo-fig.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-fig.c'; fi`
+Makefile:1017: update target 'lstopo-lstopo-svg.obj' due to: target does not exist
+source='lstopo-svg.c' object='lstopo-lstopo-svg.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc  -DLSTOPO_HAVE_GRAPHICS -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo-lstopo-svg.obj `if test -f 'lstopo-svg.c'; then cygpath -w 'lstopo-svg.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-svg.c'; fi`
+Makefile:1031: update target 'lstopo-lstopo-ascii.obj' due to: target does not exist
+source='lstopo-ascii.c' object='lstopo-lstopo-ascii.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc  -DLSTOPO_HAVE_GRAPHICS -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo-lstopo-ascii.obj `if test -f 'lstopo-ascii.c'; then cygpath -w 'lstopo-ascii.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-ascii.c'; fi`
+Makefile:1045: update target 'lstopo-lstopo-text.obj' due to: target does not exist
+source='lstopo-text.c' object='lstopo-lstopo-text.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc  -DLSTOPO_HAVE_GRAPHICS -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo-lstopo-text.obj `if test -f 'lstopo-text.c'; then cygpath -w 'lstopo-text.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-text.c'; fi`
+Makefile:1059: update target 'lstopo-lstopo-xml.obj' due to: target does not exist
+source='lstopo-xml.c' object='lstopo-lstopo-xml.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc  -DLSTOPO_HAVE_GRAPHICS -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo-lstopo-xml.obj `if test -f 'lstopo-xml.c'; then cygpath -w 'lstopo-xml.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-xml.c'; fi`
+Makefile:1101: update target 'lstopo-lstopo-windows.obj' due to: target does not exist
+source='lstopo-windows.c' object='lstopo-lstopo-windows.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc  -DLSTOPO_HAVE_GRAPHICS -DWIN32 -D_WINDOWS -D_DEBUG  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo-lstopo-windows.obj `if test -f 'lstopo-windows.c'; then cygpath -w 'lstopo-windows.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-windows.c'; fi`
+Makefile:1241: update target 'lstopo_win-lstopo.obj' due to: target does not exist
+source='lstopo.c' object='lstopo_win-lstopo.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc  -DLSTOPO_HAVE_GRAPHICS -DWIN32 -D_WINDOWS -D_DEBUG  -mwindows -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo_win-lstopo.obj `if test -f 'lstopo.c'; then cygpath -w 'lstopo.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo.c'; fi`
+Makefile:1255: update target 'lstopo_win-lstopo-draw.obj' due to: target does not exist
+source='lstopo-draw.c' object='lstopo_win-lstopo-draw.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc  -DLSTOPO_HAVE_GRAPHICS -DWIN32 -D_WINDOWS -D_DEBUG  -mwindows -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo_win-lstopo-draw.obj `if test -f 'lstopo-draw.c'; then cygpath -w 'lstopo-draw.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-draw.c'; fi`
+Makefile:1269: update target 'lstopo_win-lstopo-tikz.obj' due to: target does not exist
+source='lstopo-tikz.c' object='lstopo_win-lstopo-tikz.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc  -DLSTOPO_HAVE_GRAPHICS -DWIN32 -D_WINDOWS -D_DEBUG  -mwindows -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo_win-lstopo-tikz.obj `if test -f 'lstopo-tikz.c'; then cygpath -w 'lstopo-tikz.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-tikz.c'; fi`
+Makefile:1283: update target 'lstopo_win-lstopo-fig.obj' due to: target does not exist
+source='lstopo-fig.c' object='lstopo_win-lstopo-fig.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc  -DLSTOPO_HAVE_GRAPHICS -DWIN32 -D_WINDOWS -D_DEBUG  -mwindows -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo_win-lstopo-fig.obj `if test -f 'lstopo-fig.c'; then cygpath -w 'lstopo-fig.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-fig.c'; fi`
+Makefile:1297: update target 'lstopo_win-lstopo-svg.obj' due to: target does not exist
+source='lstopo-svg.c' object='lstopo_win-lstopo-svg.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc  -DLSTOPO_HAVE_GRAPHICS -DWIN32 -D_WINDOWS -D_DEBUG  -mwindows -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo_win-lstopo-svg.obj `if test -f 'lstopo-svg.c'; then cygpath -w 'lstopo-svg.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-svg.c'; fi`
+Makefile:1311: update target 'lstopo_win-lstopo-ascii.obj' due to: target does not exist
+source='lstopo-ascii.c' object='lstopo_win-lstopo-ascii.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc  -DLSTOPO_HAVE_GRAPHICS -DWIN32 -D_WINDOWS -D_DEBUG  -mwindows -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo_win-lstopo-ascii.obj `if test -f 'lstopo-ascii.c'; then cygpath -w 'lstopo-ascii.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-ascii.c'; fi`
+Makefile:1325: update target 'lstopo_win-lstopo-text.obj' due to: target does not exist
+source='lstopo-text.c' object='lstopo_win-lstopo-text.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc  -DLSTOPO_HAVE_GRAPHICS -DWIN32 -D_WINDOWS -D_DEBUG  -mwindows -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo_win-lstopo-text.obj `if test -f 'lstopo-text.c'; then cygpath -w 'lstopo-text.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-text.c'; fi`
+Makefile:1339: update target 'lstopo_win-lstopo-xml.obj' due to: target does not exist
+source='lstopo-xml.c' object='lstopo_win-lstopo-xml.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc  -DLSTOPO_HAVE_GRAPHICS -DWIN32 -D_WINDOWS -D_DEBUG  -mwindows -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo_win-lstopo-xml.obj `if test -f 'lstopo-xml.c'; then cygpath -w 'lstopo-xml.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-xml.c'; fi`
+Makefile:1381: update target 'lstopo_win-lstopo-windows.obj' due to: target does not exist
+source='lstopo-windows.c' object='lstopo_win-lstopo-windows.obj' libtool=no \
+DEPDIR=.deps depmode=msvc7 /bin/sh ../.././../src/loc-2.11.2-a8fd08dd1a.clean/./config/depcomp \
+compile cl.exe -DHAVE_CONFIG_H -I. -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo -I../../include/private/autogen -I../../include/hwloc/autogen  -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg"/include -I"/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean"/include -I../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/hwloc  -DLSTOPO_HAVE_GRAPHICS -DWIN32 -D_WINDOWS -D_DEBUG  -mwindows -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -c -o lstopo_win-lstopo-windows.obj `if test -f 'lstopo-windows.c'; then cygpath -w 'lstopo-windows.c'; else cygpath -w '../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-windows.c'; fi`
+Makefile:1911: update target 'lstopo-no-graphics.1' due to: target does not exist
+echo Creating lstopo-no-graphics.1 man page...
+Creating lstopo-no-graphics.1 man page...
+/usr/bin/sed -e 's/%PACKAGE_NAME%/hwloc/g' -e 's/%PACKAGE_VERSION%/2.11.2rc2-git/g' -e 's/%HWLOC_DATE%/Unreleased developer copy/g' \
+  > lstopo-no-graphics.1 < ../.././../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-no-graphics.1in
+lstopo.c
+lstopo-fig.c
+lstopo-fig.c
+lstopo-ascii.c
+lstopo-text.c
+lstopo-svg.c
+lstopo-draw.c
+lstopo-xml.c
+lstopo-tikz.c
+lstopo-windows.c
+lstopo.c
+lstopo-ascii.c
+lstopo-tikz.c
+lstopo-tikz.c
+lstopo-xml.c
+lstopo-windows.c
+lstopo-text.c
+lstopo-svg.c
+lstopo-draw.c
+lstopo-fig.c
+lstopo-ascii.c
+lstopo-xml.c
+lstopo-draw.c
+lstopo-svg.c
+lstopo-text.c
+lstopo.c
+Makefile:876: update target 'lstopo-no-graphics.exe' due to: target does not exist
+rm -f lstopo-no-graphics.exe
+Makefile:872: update target 'lstopo.exe' due to: target does not exist
+rm -f lstopo.exe
+/bin/sh ../../libtool  --tag=CC   --mode=link compile cl.exe  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -no-undefined -Xlinker -Xlinker -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -Xlinker -Xlinker -machine:x64 -Xlinker -Xlinker -Xlinker -nologo -Xlinker -Xlinker -Xlinker -debug -Xlinker -Xlinker -Xlinker -INCREMENTAL -o lstopo-no-graphics.exe lstopo_no_graphics-lstopo.obj lstopo_no_graphics-lstopo-draw.obj lstopo_no_graphics-lstopo-tikz.obj lstopo_no_graphics-lstopo-fig.obj lstopo_no_graphics-lstopo-svg.obj lstopo_no_graphics-lstopo-ascii.obj lstopo_no_graphics-lstopo-text.obj lstopo_no_graphics-lstopo-xml.obj  /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/libhwloc.la /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/utils/hwloc/libutils_common.la -lm  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32
+/bin/sh ../../libtool  --tag=CC   --mode=link compile cl.exe  -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -no-undefined -Xlinker -Xlinker -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -Xlinker -Xlinker -machine:x64 -Xlinker -Xlinker -Xlinker -nologo -Xlinker -Xlinker -Xlinker -debug -Xlinker -Xlinker -Xlinker -INCREMENTAL -o lstopo.exe lstopo-lstopo.obj lstopo-lstopo-draw.obj lstopo-lstopo-tikz.obj lstopo-lstopo-fig.obj lstopo-lstopo-svg.obj lstopo-lstopo-ascii.obj lstopo-lstopo-text.obj lstopo-lstopo-xml.obj   lstopo-lstopo-windows.obj /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/libhwloc.la /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/utils/hwloc/libutils_common.la -lm   -luser32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32
+Makefile:880: update target 'lstopo-win.exe' due to: target does not exist
+rm -f lstopo-win.exe
+/bin/sh ../../libtool  --tag=CC   --mode=link compile cl.exe  -mwindows -Xcompiler -nologo -Xcompiler -utf-8 -Xcompiler -MP -Xcompiler -MDd -Xcompiler -Z7 -Xcompiler -Ob0 -Xcompiler -Od -Xcompiler -RTC1 -no-undefined -Xlinker -Xlinker -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -Xlinker -Xlinker -machine:x64 -Xlinker -Xlinker -Xlinker -nologo -Xlinker -Xlinker -Xlinker -debug -Xlinker -Xlinker -Xlinker -INCREMENTAL -o lstopo-win.exe lstopo_win-lstopo.obj lstopo_win-lstopo-draw.obj lstopo_win-lstopo-tikz.obj lstopo_win-lstopo-fig.obj lstopo_win-lstopo-svg.obj lstopo_win-lstopo-ascii.obj lstopo_win-lstopo-text.obj lstopo_win-lstopo-xml.obj   lstopo_win-lstopo-windows.obj /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/libhwloc.la /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/utils/hwloc/libutils_common.la -lm   -luser32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32
+libtool: link: compile cl.exe -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -machine:x64 -Xlinker -nologo -Xlinker -debug -Xlinker -INCREMENTAL -o .libs/lstopo-no-graphics.exe lstopo_no_graphics-lstopo.obj lstopo_no_graphics-lstopo-draw.obj lstopo_no_graphics-lstopo-tikz.obj lstopo_no_graphics-lstopo-fig.obj lstopo_no_graphics-lstopo-svg.obj lstopo_no_graphics-lstopo-ascii.obj lstopo_no_graphics-lstopo-text.obj lstopo_no_graphics-lstopo-xml.obj  /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/utils/hwloc/.libs/utils_common.lib /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/.libs/hwloc.lib -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32  
+libtool: link: compile cl.exe -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -machine:x64 -Xlinker -nologo -Xlinker -debug -Xlinker -INCREMENTAL -o .libs/lstopo.exe lstopo-lstopo.obj lstopo-lstopo-draw.obj lstopo-lstopo-tikz.obj lstopo-lstopo-fig.obj lstopo-lstopo-svg.obj lstopo-lstopo-ascii.obj lstopo-lstopo-text.obj lstopo-lstopo-xml.obj lstopo-lstopo-windows.obj  /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/utils/hwloc/.libs/utils_common.lib /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/.libs/hwloc.lib -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32  
+libtool: link: compile cl.exe -mwindows -nologo -utf-8 -MP -MDd -Z7 -Ob0 -Od -RTC1 -Xlinker -LIBPATH:D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/x64-windows/debug/lib -Xlinker -machine:x64 -Xlinker -nologo -Xlinker -debug -Xlinker -INCREMENTAL -o .libs/lstopo-win.exe lstopo_win-lstopo.obj lstopo_win-lstopo-draw.obj lstopo_win-lstopo-tikz.obj lstopo_win-lstopo-fig.obj lstopo_win-lstopo-svg.obj lstopo_win-lstopo-ascii.obj lstopo_win-lstopo-text.obj lstopo_win-lstopo-xml.obj lstopo_win-lstopo-windows.obj  /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/utils/hwloc/.libs/utils_common.lib /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/hwloc/.libs/hwloc.lib -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -lcomdlg32 -ladvapi32  
+libtool: link: lt_outputfile=".libs/lstopo-no-graphics.exe"
+cl : Command line warning D9002 : ignoring unknown option '-mwindows'
+cl : Command line warning D9002 : ignoring unknown option '-mwindows'
+cl : Command line warning D9002 : ignoring unknown option '-mwindows'
+cl : Command line warning D9002 : ignoring unknown option '-mwindows'
+cl : Command line warning D9002 : ignoring unknown option '-mwindows'
+cl : Command line warning D9002 : ignoring unknown option '-mwindows'
+cl : Command line warning D9002 : ignoring unknown option '-mwindows'
+cl : Command line warning D9002 : ignoring unknown option '-mwindows'
+cl : Command line warning D9002 : ignoring unknown option '-mwindows'
+cl : Command line warning D9002 : ignoring unknown option '-mwindows'
+cl : Command line warning D9002 : ignoring unknown option '-mwindows'
+cl : Command line warning D9002 : ignoring unknown option '-mwindows'
+cl : Command line warning D9002 : ignoring unknown option '-mwindows'
+cl : Command line warning D9002 : ignoring unknown option '-mwindows'
+cl : Command line warning D9002 : ignoring unknown option '-mwindows'
+cl : Command line warning D9002 : ignoring unknown option '-mwindows'
+cl : Command line warning D9002 : ignoring unknown option '-mwindows'
+cl : Command line warning D9002 : ignoring unknown option '-mwindows'
+cl : Command line warning D9002 : ignoring unknown option '-mwindows'
+cl : Command line warning D9002 : ignoring unknown option '-mwindows'
+libtool: link:  lt_tool_outputfile=".libs\lstopo-no-graphics.exe"
+libtool: link:  case .libs/lstopo-no-graphics.exe in *.exe|*.EXE) ;; *) lt_outputfile=.libs/lstopo-no-graphics.exe.exe lt_tool_outputfile=.libs\lstopo-no-graphics.exe.exe ;; esac
+libtool: link:  if test : != "mt" && test -f ".libs/lstopo-no-graphics.exe.manifest"; then mt -manifest ".libs\lstopo-no-graphics.exe.manifest" -outputresource:".libs\lstopo-no-graphics.exe" || exit 1; rm -f ".libs/lstopo-no-graphics.exe.manifest"; fi
+libtool: link: lt_outputfile=".libs/lstopo-win.exe"
+libtool: link: lt_outputfile=".libs/lstopo.exe"
+libtool: link:  lt_tool_outputfile=".libs\lstopo-win.exe"
+libtool: link:  lt_tool_outputfile=".libs\lstopo.exe"
+libtool: link:  case .libs/lstopo-win.exe in *.exe|*.EXE) ;; *) lt_outputfile=.libs/lstopo-win.exe.exe lt_tool_outputfile=.libs\lstopo-win.exe.exe ;; esac
+libtool: link:  case .libs/lstopo.exe in *.exe|*.EXE) ;; *) lt_outputfile=.libs/lstopo.exe.exe lt_tool_outputfile=.libs\lstopo.exe.exe ;; esac
+libtool: link:  if test : != "mt" && test -f ".libs/lstopo.exe.manifest"; then mt -manifest ".libs\lstopo.exe.manifest" -outputresource:".libs\lstopo.exe" || exit 1; rm -f ".libs/lstopo.exe.manifest"; fi
+libtool: link:  if test : != "mt" && test -f ".libs/lstopo-win.exe.manifest"; then mt -manifest ".libs\lstopo-win.exe.manifest" -outputresource:".libs\lstopo-win.exe" || exit 1; rm -f ".libs/lstopo-win.exe.manifest"; fi
+lt-lstopo-win.c
+lt-lstopo.c
+lt-lstopo-no-graphics.c
+make[2]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/utils/lstopo'
+make[2]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/utils'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/utils'
+make[1]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/utils'
+Making all in tests
+make[1]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/tests'
+Makefile:466: update target 'all-recursive' due to: target is .PHONY
+fail=; \
+if (target_option=k; case ${target_option-} in ?) ;; *) echo "am__make_running_with_option: internal error: invalid" "target option '${target_option-}' specified" >&2; exit 1;; esac; has_opt=no; sane_makeflags=$MAKEFLAGS; if { if test -z '1'; then false; elif test -n 'x86_64-pc-msys'; then true; elif test -n '4.4.1' && test -n '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/tests'; then true; else false; fi; }; then sane_makeflags=$MFLAGS; else case $MAKEFLAGS in *\\[\ \	]*) bs=\\; sane_makeflags=`printf '%s\n' "$MAKEFLAGS" | sed "s/$bs$bs[$bs $bs	]*//g"`;; esac; fi; skip_next=no; strip_trailopt () { flg=`printf '%s\n' "$flg" | sed "s/$1.*$//"`; }; for flg in $sane_makeflags; do test $skip_next = yes && { skip_next=no; continue; }; case $flg in *=*|--*) continue;; -*I) strip_trailopt 'I'; skip_next=yes;; -*I?*) strip_trailopt 'I';; -*O) strip_trailopt 'O'; skip_next=yes;; -*O?*) strip_trailopt 'O';; -*l) strip_trailopt 'l'; skip_next=yes;; -*l?*) strip_trailopt 'l';; -[dEDm]) skip_next=yes;; -[JT]) skip_next=yes;; esac; case $flg in *$target_option*) has_opt=yes; break;; esac; done; test $has_opt = yes); then \
+  failcom='fail=yes'; \
+else \
+  failcom='exit 1'; \
+fi; \
+dot_seen=no; \
+target=`echo all-recursive | sed s/-recursive//`; \
+case "all-recursive" in \
+  distclean-* | maintainer-clean-*) list='hwloc' ;; \
+  *) list='hwloc' ;; \
+esac; \
+for subdir in $list; do \
+  echo "Making $target in $subdir"; \
+  if test "$subdir" = "."; then \
+    dot_seen=yes; \
+    local_target="$target-am"; \
+  else \
+    local_target="$target"; \
+  fi; \
+  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && /usr/bin/make  $local_target) \
+  || eval $failcom; \
+done; \
+if test "$dot_seen" = "no"; then \
+  /usr/bin/make  "$target-am" || exit 1; \
+fi; test -z "$fail"
+Making all in hwloc
+make[2]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/tests/hwloc'
+Makefile:1601: update target 'all-recursive' due to: target is .PHONY
+fail=; \
+if (target_option=k; case ${target_option-} in ?) ;; *) echo "am__make_running_with_option: internal error: invalid" "target option '${target_option-}' specified" >&2; exit 1;; esac; has_opt=no; sane_makeflags=$MAKEFLAGS; if { if test -z '2'; then false; elif test -n 'x86_64-pc-msys'; then true; elif test -n '4.4.1' && test -n '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/tests/hwloc'; then true; else false; fi; }; then sane_makeflags=$MFLAGS; else case $MAKEFLAGS in *\\[\ \	]*) bs=\\; sane_makeflags=`printf '%s\n' "$MAKEFLAGS" | sed "s/$bs$bs[$bs $bs	]*//g"`;; esac; fi; skip_next=no; strip_trailopt () { flg=`printf '%s\n' "$flg" | sed "s/$1.*$//"`; }; for flg in $sane_makeflags; do test $skip_next = yes && { skip_next=no; continue; }; case $flg in *=*|--*) continue;; -*I) strip_trailopt 'I'; skip_next=yes;; -*I?*) strip_trailopt 'I';; -*O) strip_trailopt 'O'; skip_next=yes;; -*O?*) strip_trailopt 'O';; -*l) strip_trailopt 'l'; skip_next=yes;; -*l?*) strip_trailopt 'l';; -[dEDm]) skip_next=yes;; -[JT]) skip_next=yes;; esac; case $flg in *$target_option*) has_opt=yes; break;; esac; done; test $has_opt = yes); then \
+  failcom='fail=yes'; \
+else \
+  failcom='exit 1'; \
+fi; \
+dot_seen=no; \
+target=`echo all-recursive | sed s/-recursive//`; \
+case "all-recursive" in \
+  distclean-* | maintainer-clean-*) list='ports xml linux x86 x86+linux rename' ;; \
+  *) list='. ports xml   ' ;; \
+esac; \
+for subdir in $list; do \
+  echo "Making $target in $subdir"; \
+  if test "$subdir" = "."; then \
+    dot_seen=yes; \
+    local_target="$target-am"; \
+  else \
+    local_target="$target"; \
+  fi; \
+  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && /usr/bin/make  $local_target) \
+  || eval $failcom; \
+done; \
+if test "$dot_seen" = "no"; then \
+  /usr/bin/make  "$target-am" || exit 1; \
+fi; test -z "$fail"
+Making all in .
+make[3]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/tests/hwloc'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/tests/hwloc'
+Making all in ports
+make[3]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/tests/hwloc/ports'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/tests/hwloc/ports'
+Making all in xml
+make[3]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/tests/hwloc/xml'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/tests/hwloc/xml'
+make[2]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/tests/hwloc'
+make[2]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/tests'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/tests'
+make[1]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/tests'
+Making all in contrib/systemd
+make[1]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/contrib/systemd'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/contrib/systemd'
+Making all in contrib/completion
+make[1]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/contrib/completion'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/contrib/completion'
+Making all in contrib/misc
+make[1]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/contrib/misc'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/contrib/misc'
+Making all in contrib/hwloc-ps.www
+make[1]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/contrib/hwloc-ps.www'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/contrib/hwloc-ps.www'
+Making all in doc
+make[1]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/doc'
+Makefile:1205: update target 'all' due to: target is .PHONY
+/usr/bin/make  all-recursive
+make[2]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/doc'
+Makefile:2071: update target 'all-recursive' due to: target is .PHONY
+fail=; \
+if (target_option=k; case ${target_option-} in ?) ;; *) echo "am__make_running_with_option: internal error: invalid" "target option '${target_option-}' specified" >&2; exit 1;; esac; has_opt=no; sane_makeflags=$MAKEFLAGS; if { if test -z '2'; then false; elif test -n 'x86_64-pc-msys'; then true; elif test -n '4.4.1' && test -n '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/doc'; then true; else false; fi; }; then sane_makeflags=$MFLAGS; else case $MAKEFLAGS in *\\[\ \	]*) bs=\\; sane_makeflags=`printf '%s\n' "$MAKEFLAGS" | sed "s/$bs$bs[$bs $bs	]*//g"`;; esac; fi; skip_next=no; strip_trailopt () { flg=`printf '%s\n' "$flg" | sed "s/$1.*$//"`; }; for flg in $sane_makeflags; do test $skip_next = yes && { skip_next=no; continue; }; case $flg in *=*|--*) continue;; -*I) strip_trailopt 'I'; skip_next=yes;; -*I?*) strip_trailopt 'I';; -*O) strip_trailopt 'O'; skip_next=yes;; -*O?*) strip_trailopt 'O';; -*l) strip_trailopt 'l'; skip_next=yes;; -*l?*) strip_trailopt 'l';; -[dEDm]) skip_next=yes;; -[JT]) skip_next=yes;; esac; case $flg in *$target_option*) has_opt=yes; break;; esac; done; test $has_opt = yes); then \
+  failcom='fail=yes'; \
+else \
+  failcom='exit 1'; \
+fi; \
+dot_seen=no; \
+target=`echo all-recursive | sed s/-recursive//`; \
+case "all-recursive" in \
+  distclean-* | maintainer-clean-*) list='examples' ;; \
+  *) list='examples' ;; \
+esac; \
+for subdir in $list; do \
+  echo "Making $target in $subdir"; \
+  if test "$subdir" = "."; then \
+    dot_seen=yes; \
+    local_target="$target-am"; \
+  else \
+    local_target="$target"; \
+  fi; \
+  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && /usr/bin/make  $local_target) \
+  || eval $failcom; \
+done; \
+if test "$dot_seen" = "no"; then \
+  /usr/bin/make  "$target-am" || exit 1; \
+fi; test -z "$fail"
+Making all in examples
+make[3]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/doc/examples'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/doc/examples'
+make[3]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/doc'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/doc'
+make[2]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/doc'
+make[1]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg/doc'
+make[1]: Entering directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg'

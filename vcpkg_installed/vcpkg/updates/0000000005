@@ -1,0 +1,9 @@
+Package: hwloc
+Version: 2.11.2
+Architecture: x64-windows
+Multi-Arch: same
+Maintainer: bgoglin<Brice.Goglin@inria.fr>
+Abi: ed245d281f408a0c19e7d8ccdb962c4d63bc214e925ffc9262751838f936e2a6
+Description: Portable Hardware Locality (hwloc)
+    The Portable Hardware Locality (hwloc) software package provides a portable abstraction (across OS, versions, architectures, ...) of the hierarchical topology of modern architectures, including NUMA memory nodes, sockets, shared caches, cores and simultaneous multithreading. It also gathers various system attributes such as cache and memory information as well as the locality of I/O devices such as network interfaces, InfiniBand HCAs or GPUs.
+Status: purge ok not-installed

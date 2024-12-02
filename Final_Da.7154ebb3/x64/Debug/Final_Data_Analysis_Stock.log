@@ -1,0 +1,5 @@
+﻿cl : command line  warning D9025: overriding '/openmp' with '/openmp:llvm'
+  main.cpp
+  Final_Data_Analysis_Stock.vcxproj -> D:\Seneca\GPU\work\Final_Data_Analysis_Stock\x64\Debug\Final_Data_Analysis_Stock.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

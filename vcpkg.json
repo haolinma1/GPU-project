@@ -1,0 +1,9 @@
+{
+  "dependencies": [
+    "fmt",
+    "jsoncpp",
+    "msmpi",
+    "tbb",
+    "curl"
+  ]
+}

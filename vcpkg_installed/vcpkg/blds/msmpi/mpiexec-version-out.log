@@ -1,0 +1,29 @@
+Microsoft MPI Startup Program [Version 10.1.12498.52]
+
+Launches an application on multiple hosts.
+
+Usage:
+
+    mpiexec [options] executable [args] [ : [options] exe [args] : ... ]
+    mpiexec -configfile <file name>
+
+Common options:
+
+-n <num_processes>
+-env <env_var_name> <env_var_value>
+-wdir <working_directory>
+-hosts n host1 [m1] host2 [m2] ... hostn [mn]
+-cores <num_cores_per_host>
+-lines
+-debug [0-3]
+-logfile <log file>
+
+Examples:
+
+    mpiexec -n 4 pi.exe
+    mpiexec -hosts 1 server1 master : -n 8 worker
+
+For a complete list of options, run mpiexec -help2
+For a list of environment variables, run mpiexec -help3
+
+You can reach the Microsoft MPI team via email at askmpi@microsoft.com

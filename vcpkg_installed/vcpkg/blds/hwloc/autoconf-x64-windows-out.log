@@ -1,0 +1,8 @@
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, './config'.
+libtoolize: copying file './config/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, './config'.
+libtoolize: copying file './config/libtool.m4'
+libtoolize: copying file './config/ltoptions.m4'
+libtoolize: copying file './config/ltsugar.m4'
+libtoolize: copying file './config/ltversion.m4'
+libtoolize: copying file './config/lt~obsolete.m4'

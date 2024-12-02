@@ -1,0 +1,403 @@
+
+###
+### Configuring hwloc distribution tarball
+### Startup tests
+###
+checking build system type... x86_64-pc-mingw32
+checking host system type... x86_64-pc-mingw32
+checking target system type... x86_64-pc-mingw32
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether UID '197609' is supported by ustar format... yes
+checking whether GID '197609' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether make supports nested variables... (cached) yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... compile cl.exe
+checking whether the C compiler works... yes
+checking for C compiler default output file name... conftest.exe
+checking for suffix of executables... .exe
+checking whether we are cross compiling... no
+checking for suffix of object files... obj
+checking whether the compiler supports GNU C... no
+checking whether compile cl.exe accepts -g... yes
+checking for compile cl.exe option to enable C11 features... unsupported
+checking for compile cl.exe option to enable C99 features... (cached) none needed
+checking whether compile cl.exe understands -c and -o together... yes
+checking dependency style of compile cl.exe... msvc7
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... no
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... no
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking the archiver (ar-lib lib.exe) interface... ar
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for non-GNU ld... link.exe -verbose
+checking if the linker (link.exe -verbose) is GNU ld... no
+checking for BSD- or MS-compatible name lister (nm)... dumpbin.exe -symbols -headers
+checking the name lister (dumpbin.exe -symbols -headers) interface... MS dumpbin
+checking whether ln -s works... no, using cp -pR
+checking the maximum length of command line arguments... 8192
+checking how to convert x86_64-pc-mingw32 file names to x86_64-pc-mingw32 format... func_convert_file_msys_to_w32
+checking how to convert x86_64-pc-mingw32 file names to toolchain format... func_convert_file_msys_to_w32
+checking for link.exe -verbose option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... file_magic ^x86 archive import|^x86 DLL
+checking for dlltool... link.exe -verbose -dll
+checking how to associate runtime and link libraries... func_cygming_dll_for_implib_fallback
+checking for archiver @FILE support... @
+checking for strip... (cached) :
+checking for ranlib... :
+checking command to parse dumpbin.exe -symbols -headers output from compile cl.exe object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... yes
+checking for dlfcn.h... no
+checking for as... :
+checking for dlltool... (cached) link.exe -verbose -dll
+checking for objdump... (cached) objdump
+checking for objdir... .libs
+checking for compile cl.exe option to produce PIC... -DDLL_EXPORT -DPIC
+checking if compile cl.exe PIC flag -DDLL_EXPORT -DPIC works... yes
+checking if compile cl.exe static flag  works... yes
+checking if compile cl.exe supports -c -o file.obj... yes
+checking if compile cl.exe supports -c -o file.obj... (cached) yes
+checking whether the compile cl.exe linker (link.exe -verbose) supports shared libraries... yes
+checking dynamic linker characteristics... Win32 link.exe
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... no
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking whether the compiler supports GNU C++... no
+checking whether compile cl.exe accepts -g... yes
+checking for compile cl.exe option to enable C++11 features... none needed
+checking dependency style of compile cl.exe... msvc7
+checking how to run the C++ preprocessor... compile cl.exe -E
+checking whether the compile cl.exe linker (link.exe -verbose) supports shared libraries... yes
+checking for compile cl.exe option to produce PIC... -DDLL_EXPORT -DPIC
+checking if compile cl.exe PIC flag -DDLL_EXPORT -DPIC works... yes
+checking if compile cl.exe static flag  works... yes
+checking if compile cl.exe supports -c -o file.obj... yes
+checking if compile cl.exe supports -c -o file.obj... (cached) yes
+checking whether the compile cl.exe linker (link.exe -verbose) supports shared libraries... yes
+checking dynamic linker characteristics... Win32 link.exe
+checking how to hardcode library paths into programs... immediate
+checking for gcc... (cached) compile cl.exe
+checking whether the compiler supports GNU C... (cached) no
+checking whether compile cl.exe accepts -g... (cached) yes
+checking for compile cl.exe option to enable C11 features... (cached) unsupported
+checking for compile cl.exe option to enable C99 features... (cached) none needed
+checking whether compile cl.exe understands -c and -o together... (cached) yes
+checking dependency style of compile cl.exe... (cached) msvc7
+checking for compile cl.exe options needed to detect all undeclared functions... none needed
+checking pkg-config is at least version 0.9.0... yes
+checking how to run the C preprocessor... compile cl.exe -E
+checking for X... no
+
+###
+### Configuring hwloc core
+###
+checking hwloc building mode... standalone
+configure: hwloc builddir: /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/x64-windows-dbg
+configure: hwloc srcdir: /d/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/blds/hwloc/src/loc-2.11.2-a8fd08dd1a.clean
+configure: Detected VPATH build
+checking for hwloc version... 2.11.2rc2-git
+checking if want hwloc maintainer support... disabled
+checking for hwloc directory prefix... (none)
+checking for hwloc symbol prefix... hwloc_
+checking for the C compiler vendor... microsoft
+checking size of void *... 8
+checking which OS support to include... Windows
+checking which CPU support to include... x86_64
+checking size of unsigned long... 4
+checking size of unsigned int... 4
+checking for __attribute__... yes
+checking for __attribute__(aligned)... no
+checking for __attribute__(always_inline)... no
+checking for __attribute__(cold)... no
+checking for __attribute__(const)... no
+checking for __attribute__(deprecated)... no
+checking for __attribute__(constructor)... no
+checking for __attribute__(format)... no
+checking for __attribute__(hot)... no
+checking for __attribute__(malloc)... no
+checking for __attribute__(may_alias)... no
+checking for __attribute__(no_instrument_function)... no
+checking for __attribute__(nonnull)... no
+checking for __attribute__(noreturn)... no
+checking for __attribute__(packed)... no
+checking for __attribute__(pure)... no
+checking for __attribute__(sentinel)... no
+checking for __attribute__(unused)... no
+checking for __attribute__(warn_unused_result)... no
+checking for __attribute__(weak_alias)... no
+checking whether to enable symbol visibility... no (disabled)
+checking whether the C compiler rejects function calls with too many arguments... yes
+checking whether the C compiler rejects function calls with too few arguments... yes
+checking whether to enable "picky" compiler mode... no (default)
+checking for unistd.h... (cached) no
+checking for dirent.h... no
+checking for strings.h... (cached) no
+checking for ctype.h... yes
+checking for strcasecmp... no
+checking for strncasecmp... no
+checking for strftime... yes
+checking for setlocale... yes
+checking for stdint.h... (cached) yes
+checking for sys/mman.h... no
+
+**** Windows-specific checks
+checking for windows.h... yes
+checking for KAFFINITY... yes
+checking for PROCESSOR_CACHE_TYPE... yes
+checking for CACHE_DESCRIPTOR... yes
+checking for LOGICAL_PROCESSOR_RELATIONSHIP... yes
+checking for RelationProcessorPackage... no
+checking for GROUP_AFFINITY... yes
+checking for PROCESSOR_RELATIONSHIP... yes
+checking for NUMA_NODE_RELATIONSHIP... yes
+checking for CACHE_RELATIONSHIP... yes
+checking for PROCESSOR_GROUP_INFO... yes
+checking for GROUP_RELATIONSHIP... yes
+checking for SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX... yes
+checking for PSAPI_WORKING_SET_EX_BLOCK... no
+checking for PSAPI_WORKING_SET_EX_INFORMATION... no
+checking for PROCESSOR_NUMBER... yes
+checking whether GetModuleFileName is declared... yes
+checking for main in -lgdi32... yes
+checking for PostQuitMessage in -luser32... yes
+checking for lib... /c/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/lib
+**** end of Windows-specific checks
+
+checking for sys/param.h... no
+checking for sys/sysctl.h... no
+checking for sysctl... no
+checking for sysctlbyname... no
+checking whether pthread_setaffinity_np is declared... no
+checking whether pthread_getaffinity_np is declared... no
+checking whether fabsf is declared... yes
+checking for fabsf in -lm... no
+checking whether modff is declared... yes
+checking for modff in -lm... no
+checking whether _SC_NPROCESSORS_ONLN is declared... no
+checking whether _SC_NPROCESSORS_CONF is declared... no
+checking whether _SC_NPROC_ONLN is declared... no
+checking whether _SC_NPROC_CONF is declared... no
+checking whether _SC_PAGESIZE is declared... no
+checking whether _SC_PAGE_SIZE is declared... no
+checking whether _SC_LARGE_PAGESIZE is declared... no
+checking for mach/mach_init.h... no
+checking for mach_init.h... no
+checking for mach/mach_host.h... no
+checking whether strtoull is declared... yes
+checking for ssize_t... no
+checking whether snprintf is declared... yes
+checking whether _strdup is declared... yes
+checking whether _putenv is declared... yes
+checking whether snprintf is correct... yes
+checking whether getprogname is declared... no
+checking whether getexecname is declared... no
+checking for program_invocation_name... no
+checking for __progname... no
+checking for ffs... no
+checking for ffsl... no
+checking for fls... no
+checking for flsl... no
+checking for clz... no
+checking for clzl... no
+checking for openat... no
+checking for malloc.h... yes
+checking for getpagesize... no
+checking for memalign... no
+checking for posix_memalign... no
+checking for sys/utsname.h... no
+checking for uname... no
+checking for pthread_mutex_lock... no
+configure: trying again with -lpthread ...
+checking for pthread_mutex_lock... no
+checking for valgrind/valgrind.h... no
+checking whether RUNNING_ON_VALGRIND is declared... no
+
+**** NVIDIA GL configuration
+checking for X11/Xlib.h... no
+checking for NVCtrl/NVCtrl.h... no
+**** end of NVIDIA GL configuration
+
+**** x86 CPUID configuration
+checking for x86 cpuid... no
+**** end of x86 CPUID configuration
+
+**** component and plugin-specific configuration
+checking if plugin support is enabled... no
+checking components to build statically...  noos xml synthetic xml_nolibxml windows
+checking components to build as plugins... 
+**** end of component and plugin configuration
+checking for diff... /usr/bin/diff
+
+###
+### Configuring hwloc documentation
+###
+checking if this is a developer build... no (doxygen generation is optional)
+checking for doxygen... no
+checking for pdflatex... no
+checking for makeindex... no
+checking for fig2dev... no
+checking for gs... no
+checking for epstopdf... no
+checking if can build doxygen docs... no
+checking for w3m... no
+checking for lynx... no
+checking if can build top-level README... no
+checking if will build top-level README... no
+checking if will build doxygen docs... no
+checking if will install doxygen docs... no
+
+###
+### Configuring hwloc command line utilities
+###
+checking for X11/Xlib.h... (cached) no
+checking for wchar_t... yes
+checking for putwc... yes
+checking for locale.h... yes
+checking for setlocale... (cached) yes
+checking for uselocale... no
+checking for xlocale.h... no
+checking for langinfo.h... no
+checking termcap support using ncurses and ... no
+checking termcap support using ncurses and -lncursesw... no
+checking termcap support using ncurses and -lncurses... no
+checking termcap support using ncurses and -ltinfo... no
+checking termcap support using ncurses and -ltermcap... no
+checking termcap support using curses and ... no
+checking termcap support using curses and -lcursesw... no
+checking termcap support using curses and -lcurses... no
+checking termcap support using curses and -ltinfo... no
+checking termcap support using curses and -ltermcap... no
+checking whether diff accepts -u... yes
+checking whether diff accepts -w... yes
+checking whether bind is declared... no
+checking for isatty... yes
+checking for tcgetpgrp... no
+checking for time.h... yes
+checking for clock_gettime... no
+
+###
+### Configuring tests
+###
+checking for pthread_self in -lpthread... no
+checking for NUMA... no
+checking for numa_available in -lnuma... no
+checking for stdlib.h... (cached) yes
+checking for mkstemp... no
+checking for infiniband/verbs.h... no
+checking for bash... /bin/sh
+checking for xmllint... no
+checking for bunzip2... no
+checking if CXX works... yes
+checking whether diff accepts -u... yes
+
+###
+### Performing final hwloc configuration
+###
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating hwloc/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/examples/Makefile
+config.status: creating doc/doxygen-config.cfg
+config.status: creating utils/Makefile
+config.status: creating utils/hwloc/Makefile
+config.status: creating utils/lstopo/Makefile
+config.status: creating hwloc.pc
+config.status: creating tests/Makefile
+config.status: creating tests/hwloc/Makefile
+config.status: creating tests/hwloc/linux/Makefile
+config.status: creating tests/hwloc/linux/allowed/Makefile
+config.status: creating tests/hwloc/linux/gather/Makefile
+config.status: creating tests/hwloc/x86/Makefile
+config.status: creating tests/hwloc/x86+linux/Makefile
+config.status: creating tests/hwloc/xml/Makefile
+config.status: creating tests/hwloc/ports/Makefile
+config.status: creating tests/hwloc/rename/Makefile
+config.status: creating tests/hwloc/linux/allowed/test-topology.sh
+config.status: creating tests/hwloc/linux/gather/test-gather-topology.sh
+config.status: creating tests/hwloc/linux/test-topology.sh
+config.status: creating tests/hwloc/x86/test-topology.sh
+config.status: creating tests/hwloc/x86+linux/test-topology.sh
+config.status: creating tests/hwloc/xml/test-topology.sh
+config.status: creating tests/hwloc/wrapper.sh
+config.status: creating utils/hwloc/hwloc-compress-dir
+config.status: creating utils/hwloc/hwloc-gather-topology
+config.status: creating utils/hwloc/test-hwloc-annotate.sh
+config.status: creating utils/hwloc/test-hwloc-calc.sh
+config.status: creating utils/hwloc/test-hwloc-compress-dir.sh
+config.status: creating utils/hwloc/test-hwloc-diffpatch.sh
+config.status: creating utils/hwloc/test-hwloc-distrib.sh
+config.status: creating utils/hwloc/test-hwloc-info.sh
+config.status: creating utils/hwloc/test-build-custom-topology.sh
+config.status: creating utils/hwloc/test-fake-plugin.sh
+config.status: creating utils/hwloc/test-parsing-flags.sh
+config.status: creating utils/hwloc/test-hwloc-dump-hwdata/Makefile
+config.status: creating utils/hwloc/test-hwloc-dump-hwdata/test-hwloc-dump-hwdata.sh
+config.status: creating utils/lstopo/test-lstopo.sh
+config.status: creating utils/lstopo/test-lstopo-shmem.sh
+config.status: creating contrib/hwloc-ps.www/Makefile
+config.status: creating contrib/systemd/Makefile
+config.status: creating contrib/completion/Makefile
+config.status: creating contrib/completion/test-bash-completion.sh
+config.status: creating contrib/misc/Makefile
+config.status: creating contrib/windows/Makefile
+config.status: creating include/private/autogen/config.h
+config.status: creating include/hwloc/autogen/config.h
+config.status: linking ./../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-solaris.c to tests/hwloc/ports/topology-solaris.c
+config.status: linking ./../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-solaris-chiptype.c to tests/hwloc/ports/topology-solaris-chiptype.c
+config.status: linking ./../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-aix.c to tests/hwloc/ports/topology-aix.c
+config.status: linking ./../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-windows.c to tests/hwloc/ports/topology-windows.c
+config.status: linking ./../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-darwin.c to tests/hwloc/ports/topology-darwin.c
+config.status: linking ./../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-freebsd.c to tests/hwloc/ports/topology-freebsd.c
+config.status: linking ./../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-netbsd.c to tests/hwloc/ports/topology-netbsd.c
+config.status: linking ./../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-hpux.c to tests/hwloc/ports/topology-hpux.c
+config.status: linking ./../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-bgq.c to tests/hwloc/ports/topology-bgq.c
+config.status: linking ./../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-opencl.c to tests/hwloc/ports/topology-opencl.c
+config.status: linking ./../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-cuda.c to tests/hwloc/ports/topology-cuda.c
+config.status: linking ./../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-nvml.c to tests/hwloc/ports/topology-nvml.c
+config.status: linking ./../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-rsmi.c to tests/hwloc/ports/topology-rsmi.c
+config.status: linking ./../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-levelzero.c to tests/hwloc/ports/topology-levelzero.c
+config.status: linking ./../src/loc-2.11.2-a8fd08dd1a.clean/hwloc/topology-gl.c to tests/hwloc/ports/topology-gl.c
+config.status: linking ./../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-windows.c to tests/hwloc/ports/lstopo-windows.c
+config.status: linking ./../src/loc-2.11.2-a8fd08dd1a.clean/utils/lstopo/lstopo-android.c to tests/hwloc/ports/lstopo-android.c
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing chmoding-scripts commands
+
+-----------------------------------------------------------------------------
+Hwloc optional build support status (more details can be found above):
+
+Probe / display I/O devices: no
+Graphical output:            yes (Windows)
+XML input / output:          basic
+Plugin support:              no
+-----------------------------------------------------------------------------
+

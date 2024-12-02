@@ -1,0 +1,133 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/msmpi-x64-windows-10.1.12498#4-3bca5b3b-8441-490a-a6e7-f274377f7c95",
+  "name": "msmpi:x64-windows@10.1.12498#4 28d69be441b1dd64d7430e345bad314a5b38113f09885b0fdc11a1fb8992b6ae",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-2024-09-30-ab8988503c7cffabfd440b243a383c0a352a023d"
+    ],
+    "created": "2024-11-28T06:34:13Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-2"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-2",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "msmpi",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "10.1.12498#4",
+      "downloadLocation": "git+https://github.com/microsoft/vcpkg@d3ccfae00ebdaac2c41fa2acfa59b862171be3ae",
+      "homepage": "https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "Microsoft MPI (MS-MPI) is a Microsoft implementation of the Message Passing Interface standard for developing and running parallel applications on the Windows platform.",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "msmpi:x64-windows",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "28d69be441b1dd64d7430e345bad314a5b38113f09885b0fdc11a1fb8992b6ae",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    },
+    {
+      "SPDXID": "SPDXRef-resource-1",
+      "name": "msmpisdk-${MSMPI_VERSION}-b0087dfd.msi",
+      "packageFileName": "msmpisdk-${MSMPI_VERSION}-b0087dfd.msi",
+      "downloadLocation": "https://download.microsoft.com/download/a/5/2/a5207ca5-1203-491a-8fb8-906fd68ae623/msmpisdk.msi",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b0087dfd21423bf87b94b17d7cb03576838585371bbf8b03cca95c3ad73670108c7bc6517b0de852ef595072cc4143be2011636e7242bcb080394d94294848a7"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "fileName": "./C:/Users/10123/AppData/Local/vcpkg/registries/git-trees/d3ccfae00ebdaac2c41fa2acfa59b862171be3ae/mpi-wrapper.cmake",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b0252c29a4bfe94869e8f58318dbedc5cee080f404a2b14562d223dbda98fb5f"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./C:/Users/10123/AppData/Local/vcpkg/registries/git-trees/d3ccfae00ebdaac2c41fa2acfa59b862171be3ae/portfile.cmake",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ac67c8463f2437b787f387425d9f6726626c44ebef5f0a8079f3727db971a031"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./C:/Users/10123/AppData/Local/vcpkg/registries/git-trees/d3ccfae00ebdaac2c41fa2acfa59b862171be3ae/vcpkg.json",
+      "SPDXID": "SPDXRef-file-2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e75c7b316fd95592d3ef28ba8f7cc4c47a2dd362d1093596ece33e489c4553de"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}

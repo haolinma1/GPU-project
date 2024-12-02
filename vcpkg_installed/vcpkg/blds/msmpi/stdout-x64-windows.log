@@ -1,0 +1,12 @@
+-- Using cached msmpisdk-10.1.12498-b0087dfd.msi.
+-- Installing: D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/pkgs/msmpi_x64-windows/include/mpi.h
+-- Installing: D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/pkgs/msmpi_x64-windows/include/mpif.h
+-- Installing: D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/pkgs/msmpi_x64-windows/include/mpi.f90
+-- Installing: D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/pkgs/msmpi_x64-windows/include/mpio.h
+-- Installing: D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/pkgs/msmpi_x64-windows/include/mspms.h
+-- Installing: D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/pkgs/msmpi_x64-windows/include/pmidbg.h
+-- Installing: D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/pkgs/msmpi_x64-windows/include/mpifptr.h
+-- Installing: D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/pkgs/msmpi_x64-windows/lib/msmpi.lib
+-- Installing: D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/pkgs/msmpi_x64-windows/debug/lib/msmpi.lib
+-- Installing: D:/Seneca/GPU/work/Final_Data_Analysis_Stock/vcpkg_installed/vcpkg/pkgs/msmpi_x64-windows/share/msmpi/mpi-wrapper.cmake
+-- Performing post-build validation

@@ -1,0 +1,9 @@
+Package: tbb
+Version: 2022.0.0
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 5890dea11a758d119fa2493b2f2b06ef221ba563042f51738ff2e8ca6f787d6d
+Description: Intel's Threading Building Blocks.
+Default-Features: hwloc
+Status: purge ok not-installed

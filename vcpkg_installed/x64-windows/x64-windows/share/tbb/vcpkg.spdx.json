@@ -1,0 +1,110 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/tbb-x64-windows-2022.0.0-9557693c-f965-4a89-b3cd-e81485c79205",
+  "name": "tbb:x64-windows@2022.0.0 5890dea11a758d119fa2493b2f2b06ef221ba563042f51738ff2e8ca6f787d6d",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-2024-11-12-eb492805e92a2c14a230f5c3deb3e89f6771c321"
+    ],
+    "created": "2024-11-28T18:50:14Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "tbb",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "2022.0.0",
+      "downloadLocation": "git+https://github.com/microsoft/vcpkg@1190d84d0e84ec7100662a4c35cd6a27ce532864",
+      "homepage": "https://github.com/oneapi-src/oneTBB",
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "Intel's Threading Building Blocks.",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "tbb:x64-windows",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "5890dea11a758d119fa2493b2f2b06ef221ba563042f51738ff2e8ca6f787d6d",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    },
+    {
+      "SPDXID": "SPDXRef-resource-1",
+      "name": "oneapi-src/oneTBB",
+      "downloadLocation": "git+https://github.com/oneapi-src/oneTBB@v2022.0.0",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "c87b84964b2c323f61895a532968dfa6413a774c177cffbf6e798a07e74e8da5d449144875771df0a1b02657eeb2a7ae4d41c6c432dbf7ea50e3d5a9ea9f8cd3"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "fileName": "./C:/Users/10123/AppData/Local/vcpkg/registries/git-trees/1190d84d0e84ec7100662a4c35cd6a27ce532864/portfile.cmake",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "535dcf4a0843a99e19c6126cc93ced16a0372e9b39bcba2b08eebf619b92b47f"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./C:/Users/10123/AppData/Local/vcpkg/registries/git-trees/1190d84d0e84ec7100662a4c35cd6a27ce532864/vcpkg.json",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a784eea797f7811e8b9304431849cdf7a1e972d6125c254accc48ee43d93da10"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}

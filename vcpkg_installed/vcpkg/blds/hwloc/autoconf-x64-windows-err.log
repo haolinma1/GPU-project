@@ -1,0 +1,21 @@
+autoreconf-2.71: export WARNINGS=
+autoreconf-2.71: Entering directory '.'
+autoreconf-2.71: configure.ac: not using Gettext
+autoreconf-2.71: running: aclocal --force -I ./config
+autoreconf-2.71: configure.ac: tracing
+autoreconf-2.71: running: libtoolize --copy --force
+autoreconf-2.71: configure.ac: not using Intltool
+autoreconf-2.71: configure.ac: not using Gtkdoc
+autoreconf-2.71: running: aclocal --force -I ./config
+autoreconf-2.71: running: /usr/bin/autoconf-2.71 --force
+autoreconf-2.71: running: /usr/bin/autoheader-2.71 --force
+autoreconf-2.71: running: automake --add-missing --copy --force-missing
+configure.ac:88: installing './config/ar-lib'
+configure.ac:44: installing './config/compile'
+configure.ac:37: installing './config/config.guess'
+configure.ac:37: installing './config/config.sub'
+configure.ac:40: installing './config/install-sh'
+configure.ac:40: installing './config/missing'
+parallel-tests: installing './config/test-driver'
+contrib/misc/Makefile.am: installing './config/depcomp'
+autoreconf-2.71: Leaving directory '.'
